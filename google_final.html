@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Google</title>
+  <style>
+    #top {
+      position: absolute;
+      top: 10px;
+      right: 1%;
+    }
+    #middle {
+      /*여기에 앱솔루트를 주면 로고이미지랑 검색인풋이랑 텍스트얼라인이 안됌. 검색인풋 너비를 100%로 하면 되는데 문제는 검색창 길이가 짧아서 px로 늘리면 얼라인이 비틀림*/
+    }
+    #bottom {
+      border-top: solid 1px #dbdbdb;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+        /*패딩이나 마진주고 보더 탑 라인주면 블록자체가 움직여서 라인이 끝까지 안 이어지고 잘림ㅅㅂ 개노답 */
+    }
+    .button {
+      display: inline-block;
+    }
+    .button2 {
+      display: inline-block;
+      font-size: 13px;
+    }
+    .logo {
+      width: 350px;
+      position: absolute;
+      top: 25%;
+      left: 38%;
+    }
+    .search {
+      border-radius: 30px;
+      box-shadow: 0px 1px 4px 2px #dbdbdb;
+      border-width: 0px;
+      height: 40px;
+      width: 570px;
+      position: absolute;
+      top: 45%;
+      left: 31%;
+    }
+    .text1 {
+      border-bottom: solid 1px #dbdbdb;
+      line-height: 40px;
+      background-color: #efefef;
+      padding-left: 30px;
+      color: rgba(0,0,0,.54);
+    }
+    .text2 {
+      line-height: 40px;
+      background-color: #efefef;
+      padding-left: 30px;
+      color: rgba(0,0,0,.54);
+    }
+    .text3 {
+      line-height: 40px;
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+      color: rgba(0,0,0,.54);
+    }
+    .b, .c {
+      margin-left: 5px;
+    }
+    .a, .b {
+      font-size: 13px;
+    }
+    .c, .d {
+      vertical-align: middle;
+    }
+    .d {
+      margin-left: -10px;
+    }
+    .c {
+      padding-top: 2px;
+    }
+    .pro {
+      width: 60px;
+    }
+    .rec {
+      width: 32px;
+    }
+    .icon1 {
+      width: 32px;
+      position: absolute;
+      top: 46.3%;
+      left: 31.4%;
+    }
+    .icon2 {
+      width: 80px;
+      position: absolute;
+      top: 45.5%;
+      left: 62.2%;
+    }
+    .bttn {
+      border: 0px;
+      border-radius: 3px;
+      background-color: #efefef;
+      color: #6E6E6E;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      /* margin-left: 11px;
+      margin-right: 11px;
+      margin-top: 4px;
+      margin-bottom: 4px; */
+      font-size: 14px;
+      height: 36px;
+      line-height: 27px;
+    }
+    #bttn_group {
+      text-align: center;
+      width: 571px;
+      position: absolute;
+      top: 55%;
+      left: 31%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="top">
+    <div class="button a">Gmail</div>
+    <div class="button b ">이미지</div>
+    <div class="button c ">
+      <image src="images/menu.png" class="rec">
+    </div>
+    <div class="button d">
+      <image src="images/propile2.png" class="pro">
+    </div>
+  </div>
+  <div id="middle">
+    <image src="images/logo.jpg" class="logo">
+    <input class="search">
+    <img src="images/icon2.png" class="icon1">
+    <img src="images/icon.png" class="icon2">
+      <div id="bttn_group">
+        <button class="bttn e">Google 검색</button>
+        <button class="bttn f">I'm Feeling Lucky</button>
+      </div>
+  </div>
+  <div id="bottom">
+      <div class="text1">대한민국</div>
+        <div class="text2">
+          <div class="button2">광고</div>
+          <div class="button2">비즈니스</div>
+          <div class="button2">Google 정보</div>
+          <div class="button2">검색의 원리</div>
+        </div>
+        <div class="text3">
+          <div class="button2">개인정보처리방침</div>
+          <div class="button2">약관</div>
+          <div class="button2">설정</div>
+        </div>
+  </div>
+
+
+
+</body>
