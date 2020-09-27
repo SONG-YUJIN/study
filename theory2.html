@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Generic</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        /*one*/
+        .nav {
+            background: #5385c1;
+            border: solid 22px #5385c1;
+        }
+        .nohv {
+            position: absolute;
+            left: 13%;
+            top: 1.5%;
+            color: white;
+            font-size: 1em;
+        }
+        .nohv *{
+            color: white;
+        }
+        .top_right {
+            position: absolute;
+            right: 14%;
+            top: 1.5%;
+        }
+        .hv *{
+            color: #D4E0EF;
+        }
+        .hv {
+            border: none;
+            background: none;
+            font-size: 0.8em;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: white;
+        }
+        
+        /*two*/
+        .inner {
+            margin-right: 209px;
+            margin-left: 209px;
+            margin-top: 6em;
+            padding-bottom: 96px;
+        }
+        .header {
+            text-align: center;
+        }
+        p {
+            line-height: 1.65;
+            margin-bottom: 30px;
+        }
+        .pic_flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        .pic {
+            width: 517px;
+            height: 175px;
+        }
+        .title {
+            font-size: 1.35em;
+            color: #5385c1;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-weight: 100;
+        }
+        .button {
+            border: none;
+            background-color: #5385c1;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 12px;
+            width: 40px;
+        }
+        /*five*/
+        .footer {
+            padding-top: 20px;
+            margin-left: 210px;
+            margin-right: 210px;
+            font-size: 12px;
+            color: rgb(185, 185, 185);
+            border-top: solid 1px rgb(185, 185, 185);
+        }  
+
+    </style>       
+</head>
+
+<body>
+    <div id="one">
+        <div class="nav">
+            <div class="nohv">
+                <a href="theory.html">Theory</a>
+            </div>
+            <div class="top_right">
+                <button class="hv">
+                    <a href="theory.html">Home</a>
+                </button>
+                <button class="hv">
+                    <a href="theory2.html">Generic</a>
+                </button>
+                <button class="hv">    
+                    <a href="theory.html">Elemants</a>
+                </button>
+            </div>
+        </div> 
+    </div>    
+    <div id="two">       
+        <div class="inner">
+            <div class="header">
+                <h2 style="color: #5385c1; font-weight: 100; font-size: 2.75em; margin-bottom: 0.5em;">Nunc Dignissim</h2>
+                <p style="font-weight: 100; color: gray;">Aliquam erat volutpat nam dui</p>
+            </div>
+            <div class="story">
+                <p style="font-weight: 100; color: gray;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p style="font-weight: 100; color: gray;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            </div>
+            <div class="pic_flex">
+                <div class="pic1">
+                    <img src="images/pic01.jpg" class="pic">
+                    <div class="title">Praesent placerat magna</div>
+                    <p style="width: 500px; font-weight: 100; margin-bottom: 30px; color: gray;">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
+                    <div class="button">More</div>
+                </div>
+                <div class="pic2">
+                    <img src="images/pic02.jpg" class="pic">
+                    <div class="title">Fusce pellentesque tempus</div>
+                    <p style="width: 500px; font-weight: 100; margin-bottom: 30px; color: gray;">Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
+                   <div class="button">More</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="five">
+        <div class="footer">
+          <p>© Untitled. Design: TEMPLATED. Images: Unsplash.</p>
+        </div>
+    </div>
+</body>
